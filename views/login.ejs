@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 화면 페이지</title>
+</head>
+<body>
+    <form id="login_form" action="/logincheck" method="post">
+        <!-- name 같아도 상관이 없다!경로가 다르니까 -->
+        <input type="text" name="memberid" placeholder="아이디를 입력해주세요">
+        <input type="password" name="memberpass" placeholder="비밀번호를 입력해주세요">
+        <button type="submit">로그인</button>
+        <a href="/join">회원가입 안되었나요? 가입부터 하고 오세요</a>
+    </form>
+</body>
+</html>

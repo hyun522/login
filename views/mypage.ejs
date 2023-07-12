@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+</head>
+<body>
+    <!-- 회원정보 출력하고 싶을때 -->
+    <div><%- login.memberno %></div>
+    <div><%- login.memberid %></div>
+    <div><%- login.memberpass %></div>
+    
+    <!-- 회원정보를 수정작업 하고 싶을때 -->
+    <form action="/myupdate" method="post">
+        <input type="password" name="originPass" placeholder="원래비밀번호 입력하세요">
+        <input type="password" name="changePass" placeholder="변경할 비밀번호 입력하세요">
+        <button type="submit">회원정보 수정</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("header.ejs") %>
+    <%- if(login) { %>
+        <button>글쓰기</button>
+    <!-- <%# } else { %> -->
+    <% } %>
+
+    <!-- 로그인 되있는 상태면 글쓰기 버튼 보임 그게 아니면 안보이게 한다를 쓸수 있다! -->
+</body>
+</html>
